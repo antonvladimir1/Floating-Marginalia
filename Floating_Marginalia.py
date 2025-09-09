@@ -12,7 +12,7 @@ from PyQt6.QtCore import Qt, QSettings, QPoint, QTimer, QEvent
 # --- CONFIGURATION ---
 ORGANIZATION_NAME = "YourWorkshop"
 APPLICATION_NAME = "ThoughtCatcher"
-DEFAULT_FONT_FAMILY = "GT America Medium"
+DEFAULT_FONT_FAMILY = " "
 DEFAULT_FONT_SIZE = 20
 AUTOSAVE_INTERVAL_MS = 1500
 
@@ -204,4 +204,5 @@ if __name__ == '__main__':
     QFontDatabase.addApplicationFont("GT-America-LCGV-Standard-Medium.ttf")
     catcher = ThoughtCatcher()
     catcher.show()
+
     sys.exit(app.exec())
