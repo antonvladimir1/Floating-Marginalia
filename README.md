@@ -2,3 +2,5 @@
 An easy way to take notes while reading, integrated with your preferred text editor.
 
 Work in progress, font not provided.
+
+MIT License: Anton Vladimir
