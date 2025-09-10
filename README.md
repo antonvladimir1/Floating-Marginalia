@@ -1,6 +1,6 @@
 # Floating-Marginalia
 An easy way to take notes while reading, integrated with your preferred text editor.
 
-Work in progress, font not provided.
+Work in progress.
 
 MIT License: Anton Vladimir
