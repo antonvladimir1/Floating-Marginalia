@@ -1,5 +1,3 @@
-#Anton Vladimir
-
 import sys
 import os
 from datetime import datetime
@@ -11,8 +9,8 @@ from PyQt6.QtCore import Qt, QSettings, QPoint, QTimer, QEvent
 
 # --- CONFIGURATION ---
 ORGANIZATION_NAME = "YourWorkshop"
-APPLICATION_NAME = "ThoughtCatcher"
-DEFAULT_FONT_FAMILY = " "
+APPLICATION_NAME = "Floating_Marginalia"
+DEFAULT_FONT_FAMILY = ""
 DEFAULT_FONT_SIZE = 20
 AUTOSAVE_INTERVAL_MS = 1500
 
@@ -189,7 +187,7 @@ class ThoughtCatcher(QWidget):
         if event.key() == Qt.Key.Key_F1:
             self.start_new_session()
         elif event.key() == Qt.Key.Key_Escape:
-            self.hide()
+            QApplication.instance().quit()
         super().keyPressEvent(event)
 
     def closeEvent(self, event):
@@ -201,8 +199,7 @@ class ThoughtCatcher(QWidget):
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
-    QFontDatabase.addApplicationFont("GT-America-LCGV-Standard-Medium.ttf")
+    QFontDatabase.addApplicationFont("")
     catcher = ThoughtCatcher()
     catcher.show()
-
     sys.exit(app.exec())
